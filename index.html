@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shinka Works | AE86 Drift Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="logo">
+      <span class="kanji">進化</span>
+      <span class="wordmark">Shinka Works</span>
+    </div>
+    <nav>
+      <a href="#hero">Hero</a>
+      <a href="#builds">Builds</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#contact">Book a Build</a>
+    </nav>
+    <button class="cta ghost">Merch Drop</button>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-background">
+        <model-viewer src="assets/TOYOTA-SPRINTER-TRUENOAE86.glb" alt="Toyota AE86 Trueno render" auto-rotate
+          rotation-per-second="45deg" camera-controls interaction-prompt="none" exposure="0.95" shadow-intensity="1.1"
+          disable-zoom></model-viewer>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Gunma · Custom AE86 Division</p>
+        <h1>Grip the <span>limit.</span> Drift the legend.</h1>
+        <p class="lede">
+          Inspired by the fearless merchandising attitude of the No Fear brand,
+          Shinka Works crafts bespoke aero, chassis balance, and turbo systems
+          for Toyota Trueno AE86 builds that own the touge and the circuit in
+          equal measure.
+        </p>
+        <div class="hero-actions">
+          <button class="cta primary">Book A Dyno Session</button>
+          <button class="cta secondary">See Track Footage</button>
+        </div>
+        <div class="hero-badges">
+          <div class="badge">
+            <span class="badge-label">Power</span>
+            <span class="badge-value">412 ps</span>
+          </div>
+          <div class="badge">
+            <span class="badge-label">Weight</span>
+            <span class="badge-value">870 kg</span>
+          </div>
+          <div class="badge">
+            <span class="badge-label">Balance</span>
+            <span class="badge-value">53/47</span>
+          </div>
+        </div>
+      </div>
+      <canvas id="hero-glow"></canvas>
+    </section>
+
+    <section id="builds" class="section builds">
+      <div class="section-heading">
+        <p class="eyebrow">Signature Programs</p>
+        <h2>Curated drift configurations built to shred.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-top">
+            <p class="card-title">Kaminari Spec</p>
+            <p class="card-stat">Stage 3 aero · 2.0L 4A-GE Turbo</p>
+          </div>
+          <p>
+            Carbon wide body sculpted for alternate airflow, titanium charge
+            piping, and remapped ECU for instant spool on short straights.
+          </p>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <p class="card-title">Shōgun Spec</p>
+            <p class="card-stat">560 hp drift battles</p>
+          </div>
+          <p>
+            Sequential box, angle kit, and active diff pair with custom aero
+            tunnels to keep the chassis composed through linked corners.
+          </p>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <p class="card-title">Midnight Spec</p>
+            <p class="card-stat">Daily streetable</p>
+          </div>
+          <p>
+            Comfort coilovers, hidden lighting, and stealth exhaust for
+            city-friendly runs without abandoning the signature bite.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="philosophy" class="section philosophy">
+      <div class="panel">
+        <h3>Fearless craft, precise execution.</h3>
+        <p>
+          Every chassis is stripped, scanned, and rebuilt with computational
+          aero tools and hand-laid composites. We obsess over millimeters so
+          you can chase tenths on the hill.
+        </p>
+      </div>
+      <div class="panel metrics">
+        <div>
+          <span class="metric">128</span>
+          <p>global deliveries</p>
+        </div>
+        <div>
+          <span class="metric">14</span>
+          <p>touge podiums</p>
+        </div>
+        <div>
+          <span class="metric">6</span>
+          <p>custom aero kits</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <p class="eyebrow">Book a build</p>
+        <h2>Join the syndicate</h2>
+        <p>
+          We take on a limited number of chassis per quarter. Tell us about
+          your goals and timeline, and we will sync you with our Gunma crew.
+        </p>
+      </div>
+      <form class="contact-form">
+        <label>
+          Name
+          <input type="text" placeholder="Keiichi Tsuchiya" required />
+        </label>
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Build vision
+          <textarea placeholder="Power target, aero kit, schedule" required></textarea>
+        </label>
+        <button type="submit" class="cta primary">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <aside class="floating-gallery" aria-label="Feature builds reel">
+    <div class="gallery-header">
+      <p class="eyebrow">Spotlight</p>
+      <h4>Build Reel</h4>
+    </div>
+    <div class="gallery-grid">
+      <img src="assets/gallery-placeholder-1.jpg" alt="Placeholder for custom build" />
+      <img src="assets/gallery-placeholder-2.jpg" alt="Placeholder for custom build" />
+      <img src="assets/gallery-placeholder-3.jpg" alt="Placeholder for custom build" />
+    </div>
+    <p class="gallery-note">Replace these images with your own in <code>assets/</code>.</p>
+  </aside>
+
+  <footer class="footer">
+    <p>© 2025 Shinka Works. Built in tribute to Initial D.</p>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Legal</a>
+    </div>
+  </footer>
+
+  <div id="splat-container"></div>
+  <script src="main.js" type="module"></script>
+  <script src="splats.js" type="module"></script>
+</body>
+
+</html>
